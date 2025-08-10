@@ -219,7 +219,8 @@ class MCPTester {
     const testQueries = [
       { query: 'agent', expectedResults: true, description: 'Common term search' },
       { query: 'multi-agent', expectedResults: true, description: 'Hyphenated term search' },
-      { query: 'tutorial', expectedResults: true, description: 'Documentation search' }
+      { query: 'tutorial', expectedResults: true, description: 'Documentation search' },
+      { query: 'autogen_ext tools mcp', expectedResults: true, description: 'MCP-specific search' }
     ];
 
     for (const test of testQueries) {
