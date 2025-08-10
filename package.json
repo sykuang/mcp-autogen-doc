@@ -10,6 +10,7 @@
   "scripts": {
     "build": "tsc && chmod 755 dist/index.js",
     "dev": "tsx src/index.ts",
+    "test": "npm run build && node test.mjs",
     "prepublishOnly": "npm run build"
   },
   "files": [
