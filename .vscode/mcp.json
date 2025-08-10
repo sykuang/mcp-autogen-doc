@@ -1,0 +1,9 @@
+{
+  "servers": {
+    "autogen-docs": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["dist/index.js"]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "name": "@sykuang/mcp-autogen-doc",
+  "version": "1.0.0",
+  "description": "MCP server for searching AutoGen documentation",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "mcp-autogen-doc": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc && chmod 755 dist/index.js",
+    "dev": "tsx src/index.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "autogen",
+    "documentation",
+    "search",
+    "ai"
+  ],
+  "author": "SYKuang",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.23.8",
+    "cheerio": "^1.0.0",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "tsx": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
